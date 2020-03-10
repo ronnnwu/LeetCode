@@ -1,4 +1,4 @@
-package package1;
+package package0;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,6 +6,9 @@ import java.util.Map;
 public class Ex6 {
 
     public String convert(String s, int numRows) {
+
+        if (numRows == 1) return s;
+
         Map<Integer, StringBuilder> map = new HashMap<>();
         for (int i=0; i<numRows; i++){
             map.put(i, new StringBuilder());
